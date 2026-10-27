@@ -3,39 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ClinGuide AI – Educational Clinical Decision Support</title>
+  <title>ClinGuide AI – Clinical Decision Support</title>
   <link rel="stylesheet" href="/static/style.css" />
 </head>
 <body>
-  <!-- Educational banner – always visible -->
-  <div class="edu-banner" role="banner">
-    ⚠️ <strong>Educational use only – all cases and data are entirely fictional.</strong>
-    This tool does not provide medical advice. Final decisions belong to the clinician.
+
+  <!-- ── Top banner – always visible ────────────────────────────────────── -->
+  <div class="top-banner" role="alert">
+    <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-5a1 1 0 00-1 1v2a1 1 0 102 0V9a1 1 0 00-1-1z" clip-rule="evenodd"/>
+    </svg>
+    <span><strong>Educational use only</strong> — all cases and data are entirely fictional. This tool does not provide medical advice. Final decisions belong to the clinician.</span>
   </div>
 
-  <div class="layout">
-    <!-- Sidebar navigation -->
-    <nav class="sidebar" aria-label="Main navigation">
-      <div class="sidebar-logo">
-        <span class="logo-icon">🏥</span>
-        <span class="logo-text">ClinGuide AI</span>
-      </div>
-      <ul class="nav-list">
-        <li><a href="#overview" class="nav-link" data-page="overview">📊 Overview</a></li>
-        <li><a href="#cases" class="nav-link" data-page="cases">📋 Cases</a></li>
-        <li><a href="#audit" class="nav-link" data-page="audit">📝 Audit Log</a></li>
-      </ul>
-      <div class="sidebar-footer">v1.0 · Fictional data only</div>
-    </nav>
+  <div class="shell">
 
-    <!-- Main content area -->
-    <main class="content" id="app-content">
-      <!-- Pages are injected here by app.js -->
-      <div id="page-overview" class="page hidden"></div>
-      <div id="page-cases" class="page hidden"></div>
-      <div id="page-case-review" class="page hidden"></div>
-      <div id="page-audit" class="page hidden"></div>
-    </main>
+    <!-- ── Sidebar ─────────────────────────────────────────────────────── -->
+    <aside class="sidebar" aria-label="Main navigation">
+      <div class="sidebar-brand">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+          </svg>
+        </div>
+        <span class="brand-name">ClinGuide AI</span>
+      </div>
+
+      <nav>
+        <div class="nav-section-label">Navigation</div>
+        <ul class="nav-list">
+          <li>
+            <a href="#overview" class="nav-link" data-page="overview">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+                <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+              </svg>
+              <span>Overview</span>
+            </a>
+          </li>
+          <li>
+            <a href="#cases" class="nav-link" data-page="cases">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
+                <rect x="9" y="3" width="6" height="4" rx="1"/>
+                <line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/>
+              </svg>
+              <span>Cases</span>
+            </a>
+          </li>
+          <li>
+            <a href="#audit" class="nav-link" data-page="audit">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
+              <span>Audit Log</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div class="sidebar-foot-badge">Fictional data only</div>
+        <div class="sidebar-version">v1.0</div>
+      </div>
+    </aside>
+
+    <!-- ── Main area ───────────────────────────────────────────────────── -->
+    <div class="main-wrap">
+
+      <!-- Top header bar -->
+      <header class="topbar">
+        <div class="topbar-title" id="topbar-title">Dashboard</div>
+        <div class="topbar-right">
+          <div class="topbar-badge">
+            <svg width="13" height="13" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+            </svg>
+            <span id="topbar-time">—</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="content" id="app-content">
+        <div id="page-overview"   class="page"></div>
+        <div id="page-cases"      class="page"></div>
+        <div id="page-case-review" class="page"></div>
+        <div id="page-audit"      class="page"></div>
+      </main>
+    </div>
   </div>
 
   <script src="/static/app.js"></script>
