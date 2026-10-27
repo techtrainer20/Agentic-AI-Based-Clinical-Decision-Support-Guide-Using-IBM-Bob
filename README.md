@@ -102,18 +102,18 @@ clinguide-ai/
 
 ```mermaid
 flowchart TD
-    A[Case Data\nfrom SQLite] --> B[1 CaseAnalysis\nOrganise facts, list missing info]
-    B --> C[2 DifferentialReview\nList possibilities, never diagnoses]
-    C --> D[3 EvidenceRetrieval\nRAG word-overlap search → source IDs]
-    D --> E[4 EvidenceValidation\nSupported / Partial / Unsupported]
-    E --> F[5 GapDetection\nMissing info, overconfidence, anchoring bias]
-    F --> G[6 GuidanceRefinement\nFacts | Possibilities | Limitations | Questions]
-    D --> H[7 EscalationReview\nWarning-sign refs matched to case]
-    G --> I[8 HumanReview\nClinician Approve / Request Changes]
+    A["Case Data<br/>from SQLite"] --> B["1. Case Analysis<br/>Organise facts and list missing information"]
+    B --> C["2. Differential Review<br/>List possibilities, never diagnoses"]
+    C --> D["3. Evidence Retrieval<br/>Find relevant reference source IDs"]
+    D --> E["4. Evidence Validation<br/>Supported, partial, or unsupported"]
+    E --> F["5. Gap Detection<br/>Find missing information and risky wording"]
+    F --> G["6. Guidance Refinement<br/>Facts, possibilities, limitations, and questions"]
+    D --> H["7. Escalation Review<br/>Check warning signs in the case"]
+    G --> I["8. Human Review<br/>Clinician approves or requests changes"]
     H --> I
-    I --> J[9 AuditReport\nEvidence table, corrections, checklist]
-    J --> K[(SQLite Report\n+ Audit Log)]
-    K --> L[IBM Granite Summary\ngraceful fallback]
+    I --> J["9. Audit Report<br/>Evidence, corrections, and checklist"]
+    J --> K["SQLite Report<br/>and Audit Log"]
+    K --> L["IBM Granite Summary<br/>or template fallback"]
 ```
 
 ---
