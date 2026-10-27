@@ -230,18 +230,18 @@ It is **not** a human and **not** an autonomous clinician.
 
 ```mermaid
 flowchart TD
-    A[Case Data\nfrom SQLite] --> B[1 CaseAnalysis\nOrganise facts, list missing info]
-    B --> C[2 DifferentialReview\nList possibilities, never diagnoses]
-    C --> D[3 EvidenceRetrieval\nRAG word-overlap search → source IDs]
-    D --> E[4 EvidenceValidation\nSupported / Partial / Unsupported]
-    E --> F[5 GapDetection\nMissing info, overconfidence, anchoring bias]
-    F --> G[6 GuidanceRefinement\nFacts | Possibilities | Limitations | Questions]
-    D --> H[7 EscalationReview\nWarning-sign refs matched to case]
-    G --> I[8 HumanReview\nClinician Approve / Request Changes]
+    A["Case Data<br/>from SQLite"] --> B["1 Case Analysis<br/>Organise facts and list missing information"]
+    B --> C["2 Differential Review<br/>List possibilities, never diagnoses"]
+    C --> D["3 Evidence Retrieval<br/>RAG word-overlap search to find source IDs"]
+    D --> E["4 Evidence Validation<br/>Supported, partial, or unsupported"]
+    E --> F["5 Gap Detection<br/>Missing information, overconfidence, and anchoring bias"]
+    F --> G["6 Guidance Refinement<br/>Facts, possibilities, limitations, and questions"]
+    D --> H["7 Escalation Review<br/>Warning-sign references matched to the case"]
+    G --> I["8 Human Review<br/>Clinician approves or requests changes"]
     H --> I
-    I --> J[9 AuditReport\nEvidence table, corrections, checklist]
-    J --> K[(SQLite Report\n+ Audit Log)]
-    K --> L[IBM Granite Summary\ngraceful fallback]
+    I --> J["9 Audit Report<br/>Evidence table, corrections, and checklist"]
+    J --> K["SQLite report<br/>and audit log"]
+    K --> L["IBM Granite summary<br/>or graceful fallback"]
 ```
 
 ---
