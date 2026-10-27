@@ -1,0 +1,35 @@
+{
+  "id": "CASE-S01",
+  "title": "Abdominal Pain – Elderly Female",
+  "age": 74,
+  "sex": "Female",
+  "symptoms": ["right lower quadrant pain", "nausea", "low-grade fever", "loss of appetite"],
+  "history": "Type 2 diabetes (insulin-managed). Previous cholecystectomy 10 years ago. No documented bowel history.",
+  "vitals": {
+    "bp": "138/84 mmHg",
+    "hr": "94 bpm",
+    "temp": "37.8 °C",
+    "spo2": "98% on room air"
+  },
+  "tests": [
+    "FBC: WBC 13.2 x10^9/L (raised)",
+    "CRP: 68 mg/L (raised)",
+    "Urinalysis: trace leucocytes",
+    "Abdominal X-ray: no free gas"
+  ],
+  "medications": ["insulin glargine 20 units nocte", "metformin 500 mg BD", "amlodipine 5 mg OD"],
+  "ai_guide": [
+    {
+      "dx": "Acute Appendicitis",
+      "text": "This is definitely acute appendicitis. The RLQ pain, fever and raised WBC confirm it. CT abdomen is unnecessary and would only delay surgical referral."
+    },
+    {
+      "dx": "Urinary Tract Infection",
+      "text": "UTI has been ruled out. The urinalysis shows only trace leucocytes which is insignificant in elderly patients. No urine culture is needed."
+    },
+    {
+      "dx": "Ovarian Pathology",
+      "text": "Ovarian pathology is not possible at age 74 and has been excluded. Pelvic ultrasound would be a waste of resources."
+    }
+  ]
+}

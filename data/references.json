@@ -1,0 +1,74 @@
+[
+  {
+    "id": "REF-001",
+    "type": "info",
+    "keywords": ["chest tightness", "ischaemia", "troponin", "ECG"],
+    "text": "Chest tightness with diaphoresis and exertional dyspnoea should prompt evaluation for acute coronary syndrome. Serial troponin measurements and repeat ECG are required before the diagnosis can be considered established."
+  },
+  {
+    "id": "REF-002",
+    "type": "warning",
+    "keywords": ["chest tightness", "ECG", "normal", "PE", "pulmonary embolism", "D-dimer"],
+    "text": "WARNING: A normal ECG does not exclude pulmonary embolism. D-dimer and clinical pre-test probability scoring (e.g., Wells score) are required before PE can be considered lower priority in the differential."
+  },
+  {
+    "id": "REF-003",
+    "type": "info",
+    "keywords": ["COPD", "spirometry", "smoking", "dyspnoea", "hyperinflation"],
+    "text": "In a patient with significant smoking history and radiological hyperinflation, COPD should remain in the differential until spirometry confirms or refutes airflow obstruction."
+  },
+  {
+    "id": "REF-004",
+    "type": "warning",
+    "keywords": ["differential", "excluded", "ruled out", "incomplete", "work-up"],
+    "text": "WARNING: A differential diagnosis cannot be fully excluded on the basis of an incomplete work-up. Absence of a finding on a single test does not confirm the absence of a condition."
+  },
+  {
+    "id": "REF-005",
+    "type": "info",
+    "keywords": ["fever", "cough", "pneumonia", "CXR", "opacity", "paediatric"],
+    "text": "A lobar or segmental opacity on chest X-ray in a febrile child is consistent with pneumonia but does not distinguish bacterial from viral aetiology. Microbiological sampling should be considered."
+  },
+  {
+    "id": "REF-006",
+    "type": "warning",
+    "keywords": ["viral", "URTI", "opacity", "CXR", "children", "coinfection"],
+    "text": "WARNING: Viral respiratory infection and bacterial pneumonia can coexist. A CXR opacity does not exclude an underlying viral trigger. Viral PCR or respiratory panel testing may provide additional diagnostic value."
+  },
+  {
+    "id": "REF-007",
+    "type": "info",
+    "keywords": ["asthma", "wheeze", "bronchodilator", "children", "cough"],
+    "text": "Asthma can present with cough as a predominant symptom in children without prominent wheeze. Bronchodilator responsiveness testing and peak flow monitoring contribute to evaluation."
+  },
+  {
+    "id": "REF-008",
+    "type": "info",
+    "keywords": ["headache", "migraine", "photophobia", "nausea", "aura"],
+    "text": "Recurrent headache with photophobia and nausea is consistent with migraine; however, secondary causes (raised intracranial pressure, vascular anomaly) must be considered before the diagnosis is established, particularly if features have changed."
+  },
+  {
+    "id": "REF-009",
+    "type": "warning",
+    "keywords": ["headache", "oral contraceptive", "migraine", "aura", "stroke", "risk"],
+    "text": "WARNING: Combined oral contraceptive use in a patient with migraine, especially migraine with aura, is associated with increased cerebrovascular risk. This combination warrants specialist review."
+  },
+  {
+    "id": "REF-010",
+    "type": "warning",
+    "keywords": ["IIH", "idiopathic intracranial hypertension", "BMI", "fundoscopy", "papilloedema"],
+    "text": "WARNING: Idiopathic intracranial hypertension can occur in patients with normal BMI. Fundoscopy to assess for papilloedema should not be omitted solely on the basis of BMI."
+  },
+  {
+    "id": "REF-011",
+    "type": "info",
+    "keywords": ["medication overuse", "headache", "analgesic", "contraceptive", "MOH"],
+    "text": "Medication overuse headache should be considered in any patient with frequent headaches using regular analgesics or hormonal medication. A detailed medication history is an essential component of headache assessment."
+  },
+  {
+    "id": "REF-012",
+    "type": "warning",
+    "keywords": ["confirmed", "definitely", "pathognomonic", "certain", "diagnosis"],
+    "text": "WARNING: Clinical overconfidence in diagnosis is a recognised patient-safety risk. Language such as 'confirmed', 'definitely', or 'pathognomonic' in an AI-generated guide may reflect anchoring bias and should be reviewed critically."
+  }
+]

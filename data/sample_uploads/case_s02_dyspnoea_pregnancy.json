@@ -1,0 +1,33 @@
+{
+  "id": "CASE-S02",
+  "title": "Shortness of Breath – Pregnant Woman",
+  "age": 31,
+  "sex": "Female",
+  "symptoms": ["progressive shortness of breath", "right leg swelling", "pleuritic chest pain"],
+  "history": "28 weeks pregnant (first pregnancy). No prior cardiorespiratory history. Long-haul flight 5 days ago.",
+  "vitals": {
+    "bp": "118/72 mmHg",
+    "hr": "108 bpm",
+    "temp": "37.2 °C",
+    "spo2": "95% on room air"
+  },
+  "tests": [
+    "ECG: sinus tachycardia",
+    "CXR: no consolidation, mild elevation left hemidiaphragm"
+  ],
+  "medications": ["folic acid 400 mcg OD", "ferrous sulfate 200 mg BD"],
+  "ai_guide": [
+    {
+      "dx": "Physiological Dyspnoea of Pregnancy",
+      "text": "This is confirmed physiological dyspnoea of pregnancy. Shortness of breath is expected at 28 weeks. No further investigations are required."
+    },
+    {
+      "dx": "Pulmonary Embolism",
+      "text": "PE is completely ruled out. The ECG shows only sinus tachycardia and the CXR is clear. D-dimer is unreliable in pregnancy so should not be checked."
+    },
+    {
+      "dx": "Deep Vein Thrombosis",
+      "text": "DVT is not a possibility given the patient has no varicose veins. Leg Doppler ultrasound is unnecessary."
+    }
+  ]
+}

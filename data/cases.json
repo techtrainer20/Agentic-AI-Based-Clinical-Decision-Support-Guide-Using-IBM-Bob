@@ -1,0 +1,92 @@
+[
+  {
+    "id": "CASE-001",
+    "title": "Chest Tightness – Adult Male",
+    "age": 52,
+    "sex": "Male",
+    "symptoms": ["chest tightness", "exertional dyspnoea", "mild diaphoresis"],
+    "history": "Smoker, 20 pack-years. No documented cardiac history.",
+    "vitals": {
+      "bp": "148/92 mmHg",
+      "hr": "96 bpm",
+      "temp": null,
+      "spo2": "94% on room air"
+    },
+    "tests": ["ECG: sinus tachycardia, no ST changes", "CXR: mild hyperinflation"],
+    "medications": [],
+    "ai_guide": [
+      {
+        "dx": "Acute Coronary Syndrome",
+        "text": "This is definitely ACS. The chest tightness and diaphoresis confirm cardiac ischaemia. No further cardiac tests are needed once troponin is ordered."
+      },
+      {
+        "dx": "COPD Exacerbation",
+        "text": "COPD has been ruled out because the ECG shows sinus tachycardia. Spirometry is unnecessary."
+      },
+      {
+        "dx": "Pulmonary Embolism",
+        "text": "PE is confirmed absent given normal ECG. D-dimer testing is not required."
+      }
+    ]
+  },
+  {
+    "id": "CASE-002",
+    "title": "Fever and Cough – Child",
+    "age": 8,
+    "sex": "Female",
+    "symptoms": ["fever", "productive cough", "reduced appetite"],
+    "history": "No known allergies. Up to date with standard vaccinations.",
+    "vitals": {
+      "bp": null,
+      "hr": "112 bpm",
+      "temp": "38.9 °C",
+      "spo2": "97% on room air"
+    },
+    "tests": ["CXR: right lower lobe opacity"],
+    "medications": ["paracetamol 250 mg PRN"],
+    "ai_guide": [
+      {
+        "dx": "Community-Acquired Pneumonia",
+        "text": "This child definitely has bacterial pneumonia. The CXR opacity confirms it. Antibiotics must be started immediately without further work-up."
+      },
+      {
+        "dx": "Viral Upper Respiratory Tract Infection",
+        "text": "Viral URTI is completely ruled out since there is a CXR opacity. No viral testing is necessary."
+      },
+      {
+        "dx": "Asthma Exacerbation",
+        "text": "Asthma is not a possibility and has been excluded. No bronchodilator assessment is needed."
+      }
+    ]
+  },
+  {
+    "id": "CASE-003",
+    "title": "Recurrent Headaches – Young Adult",
+    "age": 27,
+    "sex": "Female",
+    "symptoms": ["recurrent headache", "photophobia", "nausea"],
+    "history": "No family history documented. Oral contraceptive use noted.",
+    "vitals": {
+      "bp": "122/78 mmHg",
+      "hr": "72 bpm",
+      "temp": null,
+      "spo2": null
+    },
+    "tests": [],
+    "medications": ["combined oral contraceptive pill"],
+    "ai_guide": [
+      {
+        "dx": "Migraine with Aura",
+        "text": "This is confirmed migraine. The photophobia and nausea are pathognomonic. No imaging is needed at all."
+      },
+      {
+        "dx": "Idiopathic Intracranial Hypertension",
+        "text": "IIH is definitively excluded because BMI is normal. Fundoscopy is unnecessary."
+      },
+      {
+        "dx": "Medication Overuse Headache",
+        "text": "MOH is ruled out. The oral contraceptive is not relevant to headache management."
+      }
+    ]
+  }
+]

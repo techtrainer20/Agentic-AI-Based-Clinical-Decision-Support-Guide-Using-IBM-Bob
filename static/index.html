@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClinGuide AI – Educational Clinical Decision Support</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <!-- Educational banner – always visible -->
+  <div class="edu-banner" role="banner">
+    ⚠️ <strong>Educational use only – all cases and data are entirely fictional.</strong>
+    This tool does not provide medical advice. Final decisions belong to the clinician.
+  </div>
+
+  <div class="layout">
+    <!-- Sidebar navigation -->
+    <nav class="sidebar" aria-label="Main navigation">
+      <div class="sidebar-logo">
+        <span class="logo-icon">🏥</span>
+        <span class="logo-text">ClinGuide AI</span>
+      </div>
+      <ul class="nav-list">
+        <li><a href="#overview" class="nav-link" data-page="overview">📊 Overview</a></li>
+        <li><a href="#cases" class="nav-link" data-page="cases">📋 Cases</a></li>
+        <li><a href="#audit" class="nav-link" data-page="audit">📝 Audit Log</a></li>
+      </ul>
+      <div class="sidebar-footer">v1.0 · Fictional data only</div>
+    </nav>
+
+    <!-- Main content area -->
+    <main class="content" id="app-content">
+      <!-- Pages are injected here by app.js -->
+      <div id="page-overview" class="page hidden"></div>
+      <div id="page-cases" class="page hidden"></div>
+      <div id="page-case-review" class="page hidden"></div>
+      <div id="page-audit" class="page hidden"></div>
+    </main>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
